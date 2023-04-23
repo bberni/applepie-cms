@@ -1,0 +1,53 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #ffffff;
+  background-color: #2f2f2f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.container input { 
+  color: #ffffff;
+  background-color: #1b1b1b;
+    font-size: large;
+    display: block;
+    margin: 10px;
+    padding-left: 10px;
+    min-width: 300px;
+    min-height: 40px;
+    border:0;
+}
+
+.container button {
+  color: #ffffff;
+    background-color: #1b1b1b;
+    font-size: large;
+    margin-top: 20px;
+    min-width: 100px;
+    min-height: 50px;
+    border: 0;
+}
+.container p {
+  color: #9b0000;
+  font-size: 20px;
+}

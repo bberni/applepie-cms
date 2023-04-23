@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/upload.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApplePie CMS</title>
+  <script type="module" src="/src/upload.ts" defer></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="menu-field">
+    <label for="doc-image"> Enter title:<br></label>
+    <input id="doc-title" class="text-field" type="text"/>
+  </div>
+  <div class="menu-field">
+    <label for="doc-image"> Choose an image:<br></label>
+    <button id="image-button" type="button">Not selected</button>
+  </div>
+  <div class="component">
+    <label for="doc-text">Enter post content:</label>
+    <textarea id="doc-text" name="doc-text" class="text-field" rows="20" cols="20"></textarea>
+  </div>
+  <button id="submit-button" type="button">Submit</button>
+  <p id="status-msg"></p>
+</body>
+
+</html>

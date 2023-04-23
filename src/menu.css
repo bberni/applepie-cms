@@ -1,0 +1,52 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  
+    color: #ffffff;
+    background-color: #2f2f2f;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+.container {
+    display: flex; /* use flexbox to make columns */
+/* evenly space columns */ /* vertically center headings */
+    height: 95vh; /* make container take up entire viewport height */
+  }
+
+.column {
+  width: 50%; /* make columns take up half the container width */
+  display: flex; /* add this to make the column a flex container */
+  flex-direction: column; /* add this to stack the button elements vertically */
+  justify-content: center; /* horizontally center headings */
+}
+
+.column img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(326deg) brightness(102%) contrast(103%);
+    max-width: 200px;
+    
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 2em;
+  cursor: pointer;
+}
