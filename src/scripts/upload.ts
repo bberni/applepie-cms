@@ -1,5 +1,5 @@
 import { invoke } from "@tauri-apps/api/tauri";
-import { open } from "@tauri-apps/api/dialog"
+import { open } from "@tauri-apps/api/dialog";
 
 let titleEl: HTMLInputElement | null;
 let docInputEl: HTMLInputElement | null;
@@ -9,7 +9,6 @@ let imageButtonEl: HTMLElement | null;
 async function save_post() {
   if (titleEl && statusEl && imageButtonEl && docInputEl) {
     console.log("asd")
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
     statusEl.textContent = await invoke("save_post", {
       title: titleEl.value,
       imgPath: imageButtonEl.textContent, 

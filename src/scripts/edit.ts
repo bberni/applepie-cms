@@ -1,12 +1,10 @@
+import { invoke } from "@tauri-apps/api/tauri";
+
 let listDiv: HTMLElement | null;
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", async () => {
     listDiv = document.querySelector("#list-div");
-    let list: (number | string)[][] = [
-        [1, "test1", "29.06.2023"],
-        [2, "test2", "30.06.2023"],
-        [3, "test3", "01.07.2023"],
-    ]
+    let list = await post_list();
     list.forEach((sublist) => {
         const div = document.createElement("div");
         div.classList.add("post-div");
@@ -35,8 +33,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Add event listener to the delete button
         deleteButton.addEventListener("click", () => {
+            delete_post(sublist[0])
             div.remove()
         });
         listDiv?.appendChild(div)
     });
 });
+
+async function post_list(): Promise<(string)[][]> {
+    return await invoke("post_list");
+}
+
+async function delete_post(id: string) {
+    await invoke("delete_post", {
+        id: id
+    });
+}

@@ -1,9 +1,9 @@
 use std::{fs::File, path::Path, ffi::OsStr};
 use base64::{Engine as _, engine::general_purpose};
 use chrono::prelude::*;
-use std::{io::Read};
+use std::io::Read;
 use serde::Serialize;
-use reqwest;
+
 use crate::{HASH, URL};
 #[derive(Serialize)]
 struct Post {
