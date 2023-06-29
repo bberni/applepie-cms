@@ -1,0 +1,35 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  
+    color: #ffffff;
+    background-color: #2f2f2f;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+.post-div {
+    padding: 0px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    background-color: #4d4d4d; 
+    border-radius: 10px;
+} 
+
+.del-button {
+    background-color: rgb(236, 74, 74);
+    margin: 10px;
+    width: 80px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: medium;
+    border-color: rgb(255, 45, 45);
+}

@@ -20,7 +20,8 @@ reqwest = { version = "0.11.16", features = ["json", "blocking"] }
 hex = "0.4.3"
 sha2 = "0.10.6"
 lazy_static = "1.4.0"
-
+base64 = "0.21.2"
+chrono = "0.4.26"
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem
 # DO NOT REMOVE!!

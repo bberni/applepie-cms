@@ -12,7 +12,7 @@ async function save_post() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
     statusEl.textContent = await invoke("save_post", {
       title: titleEl.value,
-      img_path: imageButtonEl.textContent, 
+      imgPath: imageButtonEl.textContent, 
       content: docInputEl.value
 
     });
@@ -24,7 +24,7 @@ async function file_handler() {
   if (imageButtonEl) {
   let file = await open({filters: [{
     name: 'Image',
-    extensions: ['png', 'jpeg']
+    extensions: ['png', 'jpg', 'webp', 'bmp']
   }]
   });
   if (typeof file == "string") {
